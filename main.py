@@ -2,8 +2,8 @@ import requests
 from datetime import datetime
 
 pixela_endpoint = "https://pixe.la/v1/users"
-USERNAME = "roosaka"
-TOKEN = "efbhjg4yj7edhevbjy37wsbh"
+USERNAME = ""
+TOKEN = ""
 user_params = {
     "token": TOKEN,
     "username": USERNAME,
@@ -11,8 +11,7 @@ user_params = {
     "notMinor": "yes"
 }
 
-# response = requests.post(url=pixela_endpoint, json=user_params)
-# print(response.text)
+
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 graph_config = {
